@@ -1,1 +1,1 @@
-$data modify storage smithed.hud:storage players.$(id) set value {build:[],index:{}}
+$data modify storage smithed.hud:storage players.$(pid) set value {build:[],index:[]}

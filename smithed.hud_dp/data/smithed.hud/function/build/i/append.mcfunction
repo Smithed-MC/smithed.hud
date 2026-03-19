@@ -1,0 +1,2 @@
+$data modify storage smithed.hud:storage players.$(pid).build append value \
+[{translate:"smithed.hud.space.$(prefix)",font:"smithed.hud:space"},$(value),{translate:"smithed.hud.space.$(symbol)",font:"smithed.hud:space"},{translate:"smithed.hud.space.$(suffix)",font:"smithed.hud:space"}]
