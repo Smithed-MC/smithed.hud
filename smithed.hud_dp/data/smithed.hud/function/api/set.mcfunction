@@ -3,3 +3,4 @@ $data modify storage smithed.hud:storage temp.id set value "$(id)"
 $data modify storage smithed.hud:storage temp.value set value $(value)
 $data modify storage smithed.hud:storage temp.width set value $(width)
 function smithed.hud:build/api/set with storage smithed.hud:storage temp
+data remove storage smithed.hud:storage temp
