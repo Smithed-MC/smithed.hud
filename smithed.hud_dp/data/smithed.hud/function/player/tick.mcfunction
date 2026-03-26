@@ -1,1 +1,0 @@
-execute if entity @s[tag=smithed.hud.displaying] run function smithed.hud:display/main

@@ -1,0 +1,1 @@
+execute as @a run function smithed.hud:internal/player/tick

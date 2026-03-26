@@ -1,5 +1,5 @@
 {
   "values": [
-    "smithed.hud:technical/tick"
+    "smithed.hud:internal/technical/tick"
   ]
 }

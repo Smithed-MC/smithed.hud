@@ -1,5 +1,3 @@
-tag @s add smithed.hud.displaying
-
 execute store result score #input_width smithed.hud.dummy run data get storage smithed.hud:storage temp.index[0].width
 
 # Set prefix to width / 2
@@ -17,8 +15,4 @@ execute store result storage smithed.hud:storage temp.entry.symbol int 1 run sco
 data modify storage smithed.hud:storage temp.entry.value set from storage smithed.hud:storage temp.index[0].value
 data modify storage smithed.hud:storage temp.entry.pid set from storage smithed.hud:storage temp.pid
 
-function smithed.hud:build/i/append with storage smithed.hud:storage temp.entry
-
-data remove storage smithed.hud:storage temp.index[0]
-execute if data storage smithed.hud:storage temp.index[0] run function smithed.hud:build/i/main
-
+function smithed.hud:internal/build/i/append with storage smithed.hud:storage temp.entry
