@@ -1,1 +1,0 @@
-execute if entity @s[tag=smithed.hud.active] run function smithed.hud:internal/active/main

@@ -1,0 +1,3 @@
+$execute if data storage smithed.hud:storage players.$(pid).build[0] run return run function smithed.hud:impl/active/display with storage smithed.hud:storage players.$(pid)
+$execute unless data storage smithed.hud:storage players.$(pid).index[0] run function smithed.hud:impl/active/reset {type:"active"}
+execute if entity @s[tag=smithed.hud.displaying] run function smithed.hud:impl/active/reset {type:"displaying"}

@@ -1,5 +1,5 @@
 {
   "values": [
-    "smithed.hud:internal/technical/load"
+    "smithed.hud:impl/technical/load"
   ]
 }
