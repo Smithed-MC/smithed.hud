@@ -1,3 +1,3 @@
-$execute if data storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] run return run data modify storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] set value {id:"$(id)",value:$(value),width:$(width),gamemodes:$(gamemodes)}
-$data modify storage smithed.hud:storage players.$(pid).index append value {id:"$(id)",value:$(value),width:$(width),gamemodes:$(gamemodes)}
+$execute if data storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] run data modify storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] set value {id:"$(id)",value:$(value),width:$(width),gamemodes:$(gamemodes)}
+$execute unless data storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] run data modify storage smithed.hud:storage players.$(pid).index append value {id:"$(id)",value:$(value),width:$(width),gamemodes:$(gamemodes)}
 function smithed.hud:impl/build/main with storage smithed.hud:storage temp
