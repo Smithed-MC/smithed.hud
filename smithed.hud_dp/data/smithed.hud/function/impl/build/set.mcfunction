@@ -1,0 +1,3 @@
+$execute if data storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] run data modify storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] set from storage smithed.hud:storage temp.build
+$execute unless data storage smithed.hud:storage players.$(pid).index[{id:"$(id)"}] run data modify storage smithed.hud:storage players.$(pid).index append from storage smithed.hud:storage temp.build
+function smithed.hud:impl/build/main with storage smithed.hud:storage temp
