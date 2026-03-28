@@ -1,5 +1,4 @@
-data modify storage smithed.hud:storage temp.build set from storage smithed.hud:storage args
-data remove storage smithed.hud:storage args
+$data modify storage smithed.hud:storage temp.build set value $(args)
 execute unless data storage smithed.hud:storage temp.build.id run return run tellraw @s {translate:"smithed.hud.warning.no_id",color:"red"}
 execute unless data storage smithed.hud:storage temp.build.width run return run tellraw @s {translate:"smithed.hud.warning.no_width",color:"red"}
 execute if data storage smithed.hud:storage temp.build{width:0} run return run tellraw @s {translate:"smithed.hud.warning.bad_width",color:"red"}
