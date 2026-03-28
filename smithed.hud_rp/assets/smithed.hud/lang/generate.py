@@ -2,9 +2,10 @@ import json
 
 letters_p = ['A','B','C','D','E','F','G','H','I','J','K','L']
 letters_n = ['a','b','c','d','e','f','g','h','i','j','k','l']
-entries_p = {}
-entries_n = {}
 entries = {}
+
+with open('include.json', 'r') as f:
+    entries = json.load(f)
 
 for i in range(1, 4097):
     combo = ""

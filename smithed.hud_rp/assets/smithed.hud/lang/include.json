@@ -1,0 +1,6 @@
+{
+  "smithed.hud.warning.no_id": "Invalid command: Missing argument \"id\"",
+  "smithed.hud.warning.no_width": "Invalid command: Missing argument \"width\"",
+  "smithed.hud.warning.bad_width": "Invalid command: \"width\" cannot be 0. It must be the length of your input text in pixels",
+  "smithed.hud.warning.no_value": "Invalid command: Missing argument \"value\""
+}
